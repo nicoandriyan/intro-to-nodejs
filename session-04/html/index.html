@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tutorial Express</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="box">
+                <div class="title">My Info</div>
+                <div class="row">
+                    <img class="pp" src="https://api.duniagames.co.id/api/content/upload/file/8143860661599124172.jpg" alt="">
+                </div>
+                <div class="row">
+                    <p>Name</p>
+                    <p>: Nico Andriyan</p>
+                </div>
+                <div class="row">
+                    <p>Address</p>
+                    <p>: Muntilan, Kab. Magelang</p>
+                </div>
+                <div class="row">
+                    <p>Phone</p>
+                    <p>: 0877314121xx</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+<style>
+    .container {
+        max-width: 940px;
+        margin: 0 auto;
+        padding-top: 25px;
+    }
+    .title {
+        position: absolute;
+        background-color: #fff;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 10px;
+    }
+    .box {
+        position: relative;
+        border: 4px solid #ccc;
+        border-radius: 4px;
+        padding: 15px 25px;
+    }
+    .pp {
+        width: 150px;
+        position: relative;
+        left: -20px;
+    }
+    .row {
+        display: flex;
+    }
+    .row p {
+        margin: 10px 0;
+    }
+    .row > p:first-child {
+        min-width: 80px;
+    }
+</style>
