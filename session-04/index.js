@@ -6,6 +6,7 @@ app.use('/', (req, res, next) => {
     console.log('app sedang berjalan');
     next();
 });
+
 app.get('/', function(req, res) {
     res.send('welcome');
 });
