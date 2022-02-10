@@ -1,0 +1,23 @@
+html 
+    head 
+    title= title 
+    body 
+    h3= message
+    a(href="/") Daftar Peserta |
+    a(href="/tambah") Tambah Peserta
+    hr
+    h3 Daftar Peserta
+    table(style="width: 50%", border="1")
+        tr
+            th No
+            th Name 
+            th Action
+        if data.length > 0
+            - var i=0;
+            each dataPeserta in data
+                tr 
+                    td #{++i}
+                    td #{dataPeserta.nama}
+                    td
+                        a(href="/delete/"+i) Hapus
+        else

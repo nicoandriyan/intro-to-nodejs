@@ -1,0 +1,14 @@
+html 
+    head 
+    title= title 
+    body
+    a(href="/") Nama Peserta |
+    a(href="/tambah") Tambah Peserta
+    hr
+    h3 Tambah Peserta
+    form(action="/tambah", method="post")
+        label(for="nama") Nama 
+        input(type="text", name="nama")#nama
+        br
+        br
+        input(type="submit", value="Simpan Data")
